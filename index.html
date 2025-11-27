@@ -6,7 +6,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    grid-auto-rows: auto;
+  }
+
+  .span {
+    grid-column: span 2;
+    background: blue;
+    padding: 20px; 
   }
 
   .flex {
@@ -15,23 +20,21 @@
   }
 
   .box {
-    border: 30px solid blue;
     background: yellow;
     height: 100px;
     flex: 2;
   }
 
-  .cute { flex: 4; }
-  .cote { flex: 2; }
-
-  .span {
-    grid-column: span 2;
+  .cute { 
+    flex: 4;
+  }
+  .cote { 
+    flex: 2; 
   }
 
   .row {
     grid-row: span 4;
     background: blue;
-    min-height: 100%;
   }
 
   .jes {
