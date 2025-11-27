@@ -1,78 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <html lang="en">
-    <head>
-      <style>
-       .container {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr;
-  grid-auto-rows: auto;
-  gap: 10px;
-  padding: 10px;
-}
-
-
-.side {
-  grid-row: span 5;
-  height: 550px;
-  background-color: blue;
-}
-
-
-.blue {
-  height: 100px;
-  background-color: blue;
-}
-
-.ryl {
-  grid-column: span 2;
-  display: flex;
-  gap: 10px;
-  height: 200px;
-  background-color: yellow;
-}
-
-.ryl .yellow {
-  flex: 2;  
-}
-
-.ryl .yellow.small {
-  flex: 1; 
-}
-
-.jes {
-  grid-column: span 2;
-  display: flex;
-  gap: 10px;
-  background-color: green;
-  height: 100px;
-  flex: 1;
-}
-</style>  
-    </head>
-    <body>
-      <div class="container">
-  <div class="side"></div>
-
-  <div class="blue"></div>
-  <div class="blue"></div>
-
-  <div class="ryl">
-    <div class="yellow"></div>
-    <div class="yellow small"></div>
-    <div class="yellow small"></div>
-  </div>
-
-  <div class="jes">
-    <div class="green"></div>
-    <div class="green"></div>
-  </div>
-
-  <div class="jes">
-    <div class="green"></div>
-    <div class="green"></div>
-  </div>
+<html lang="en">
+  <head>
+   <style>
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows: 100px 200px 200px;
+      gap:10px;
+    }
+    .flex{
+      display: flex;
+    }
+    .box{
+    
+      border: 30px solid Blue;
+      height: 100px;
+      flex: 2;
+      background: yellow;
+     
+    }
+    .cute{
+      flex:4;
+    }
+    .cote{
+      flex: 2;
+    }
+    .span{
+    grid-column: span 2;
+  
+    }
+    .row{
+    grid-row: span 4;
+    background: blue;
+    
+    }
+    .jes{
+      background: blue;
+    }
+    .ryl{
+      background: green;
+      height: 100px;
+      gap: 10px;
+    }
+   </style> 
+  </head>
+  <body>
+    <div class="grid">
+    <div class="row">  </div>
+    <div class="jes"></div>
+    <div class="jes">  </div>
+    <div class="span">
+      <div class="flex"> 
+      <div class="cute box"></div>
+      <div class="cote box"></div>
+      <div class="cote box"></div>
       </div>
-      
-    </body>
+    </div>
+    <div class="ryl"> </div>
+    <div class="ryl"> </div>
+     <div class="ryl"> </div>
+    <div class="ryl"> </div>
+    
+    </div>
+  </body>
 </html>
