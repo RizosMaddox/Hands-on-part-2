@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <style>
-    .grid {
+<head>
+<style>
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 200px;
-    grid-auto-rows: 100px;
     gap: 10px;
-    }
-    .flex{
-      display: flex;
-    }
-    .box{
-    
-      border: 30px solid Blue;
-      height: 100px;
-      flex: 2;
-      background: yellow;
-     
-    }
-    .cute{
-      flex:4;
-    }
-    .cote{
-      flex: 2;
-    }
-    .span{
+    grid-auto-rows: auto;
+  }
+
+  .flex {
+    display: flex;
+    gap: 10px;
+  }
+
+  .box {
+    border: 30px solid blue;
+    background: yellow;
+    height: 100px;
+    flex: 2;
+  }
+
+  .cute { flex: 4; }
+  .cote { flex: 2; }
+
+  .span {
     grid-column: span 2;
-  
-    }
-    .row{
+  }
+
+  .row {
     grid-row: span 4;
     background: blue;
-    
-    }
-    .jes{
-      background: blue;
-    }
-    .ryl{
-      background: green;
-    }
-   </style> 
-  </head>
-  <body>
-    <div class="grid">
-    <div class="row">  </div>
-    <div class="jes"></div>
-    <div class="jes">  </div>
-    <div class="span">
-      <div class="flex"> 
+    min-height: 100%;
+  }
+
+  .jes {
+    background: blue;
+    height: 100px;
+  }
+
+  .ryl {
+    background: green;
+    height: 150px;
+  }
+</style>
+</head>
+
+<body>
+<div class="grid">
+
+  <div class="row"></div>
+
+  <div class="jes"></div>
+  <div class="jes"></div>
+
+  <div class="span">
+    <div class="flex">
       <div class="cute box"></div>
       <div class="cote box"></div>
       <div class="cote box"></div>
-      </div>
     </div>
-    <div class="ryl"> </div>
-    <div class="ryl"> </div>
-     <div class="ryl"> </div>
-    <div class="ryl"> </div>
-    
-    </div>
-  </body>
+  </div>
+
+  <div class="ryl"></div>
+  <div class="ryl"></div>
+  <div class="ryl"></div>
+  <div class="ryl"></div>
+
+</div>
+</body>
 </html>
